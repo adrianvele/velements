@@ -1,9 +1,7 @@
-## GSAP + CURSOR + DRAGGABILITY
+# Prismic & Gatsby Velements website
 
 Have a look here: http://velements.site/
 
-
-# Prismic & Gatsby Velements website
 
 This project is meant to help you learn how to get started using [Prismic](https://prismic.io) (API based CMS) along with [Gatsby.js](https://www.gatsbyjs.org/). Check out the Prismic developer documentation to find the tutorial for this project.
 
