@@ -24,6 +24,9 @@
   },
   "devDependencies": {
     "eslint": "^7.26.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "drag": "0.0.4",
+    "draggabilly": "^2.2.0",
+    "gsap": "^3.5.1"
   }
 }
