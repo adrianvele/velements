@@ -6,6 +6,9 @@ import { Seo } from '../components/Seo'
 import { HomepageTop } from '../components/HomepageTop'
 import { MainContent } from '../components/MainContent'
 import Cursor from '../helpers/cursor'
+import DraggableImage from "../helpers/drag/draggableImage";
+
+
 
 export default class IndexPage extends Component {
   constructor(props) {
@@ -22,6 +25,10 @@ export default class IndexPage extends Component {
       link.addEventListener("mouseenter", () => cursor.enter());
       link.addEventListener("mouseleave", () => cursor.leave());
     });
+
+    [...document.querySelectorAll(".img-wrap")].forEach(
+      (element) => new DraggableImage(element)
+    );
   }
 
   render() {
