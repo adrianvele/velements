@@ -1,97 +1,44 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from "react"
+import BackgroundImages from "../components/backgroundImages"
+import MenuContent from "../components/MenuContent"
+import PagePreview from "../components/PagePreview"
 
-import skiLiftChairs from '../images/ski-lift-chairs.jpeg'
-import mountainRange from '../images/mountain-range.jpeg'
-import mountainsAndFjords from '../images/mountains-and-fjords.jpg'
-import forrestAerialShot from '../images/forrest-aerial-shot.jpeg'
+class MainContent extends Component {
+  render() {
+    const images1 = this.props.images1
+    const images2 = this.props.images2
+    const images3 = this.props.images3
+    const images4 = this.props.images4
+    const images5 = this.props.images5
+    const menuTitle = this.props.menuTitle
+    const menus = this.props.menus
+    const pagePreview = this.props.pagePreview
 
-export const MainContent = () => (
-  <main className="container">
-    <section className="content-section text-section-2col">
-      <h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-        Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-        nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-      </p>
-      <p>
-        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod
-        in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
-      </p>
-    </section>
-
-    <section className="full-width-image content-section">
-      <img src={skiLiftChairs} alt="Ski lift chairs" />
-    </section>
-
-    <section className="highlight content-section">
-      <div className="highlight-left">
-        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
-        <h3>
-          Donec nec justo eget felis facilisis fermentum hendrerit. Phasellu
-          aliquet nibh nec urna.
-        </h3>
-        <p>
-          <Link to="/about">LEARN MORE</Link>
-        </p>
-      </div>
-      <div className="highlight-right">
-        <img src={mountainRange} alt="Mountain range" />
-      </div>
-    </section>
-
-    <section className="content-section text-section-1col">
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
-        nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et
-        vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
-        augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida
-        id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper
-        lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis.
-      </p>
-    </section>
-
-    <section className="content-section quote">
-      <blockquote>Praesent elementum hendrerit tortor</blockquote>
-    </section>
-
-    <section className="image-gallery content-section">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <div className="gallery">
-        <div className="gallery-item">
-          <img src={mountainsAndFjords} alt="Mountains and fjords" />
-          <p>
-            Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae
-            luctus metus libero eu augue. Morbi purus libero, faucibus
-            adipiscing, commodo quis, gravida id, est.
-          </p>
-          <p className="gallery-link">
-            <Link to="/about">Learn More</Link>
-          </p>
+    return (
+      <section id="main" className="js">
+      <svg className="hidden">
+          <symbol id="icon-arrow" viewBox="0 0 511.996 511.996">
+            <title>Arrow left</title>
+            <path
+              d="M462.51 220.392H172.707l67.017-68.342a7.133 7.133 0 00.014-9.956l-39.544-40.612a7.13 7.13 0 00-10.204 0L44.383 251.028a7.128 7.128 0 000 9.941L189.99 410.514c1.338 1.375 3.176 2.15 5.099 2.15s3.76-.775 5.105-2.15l39.544-40.612a7.126 7.126 0 00-.014-9.956l-67.017-68.342H462.51c3.93 0 7.12-3.19 7.12-7.12v-56.97a7.124 7.124 0 00-7.12-7.122z"
+            />
+          </symbol>
+      </svg>
+        <div className="frame">
+          <h1 className="frame__title">by Adrian Vele</h1>
+          <div className="frame__links">
+            <a href="https://instagram.com/velements_/">instagram</a>
+            <a href="https://facebook.com/velements1/">facebook</a>
+          </div>
         </div>
-        <div className="gallery-item">
-          <img src={forrestAerialShot} alt="Forrest aerial shot" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque,{' '}
-            <em>aliquet vel</em>, dapibus id, mattis vel, nisi.
-          </p>
-          <p className="gallery-link">
-            <Link to="/more-info">More Info</Link>
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-)
+    
+        <BackgroundImages images1={images1} images2={images2} images3={images3} images4={images4} images5={images5} />
+        <MenuContent menuTitle={menuTitle} menus={menus}/>
+        <PagePreview content={pagePreview}/>
+
+      </section>
+    )
+  }
+}
+
+export default MainContent

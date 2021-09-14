@@ -1,5 +1,4 @@
 import * as React from 'react'
-import homeBanner from '../images/home-banner.jpg'
 
 export const HomepageTop = ({
   title,
@@ -10,9 +9,6 @@ export const HomepageTop = ({
 }) => (
   <section
     className="content-top"
-    style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${homeBanner})`,
-    }}
   >
       <div className="content__drag-area">
         <div className="img-wrap">
@@ -32,11 +28,11 @@ export const HomepageTop = ({
       </div>
       
       <div className="content__top--text text--1">
-       {leftDescription}
+        {rightDescription}
       </div>
       <h2 className="content__top--title">{title}</h2>
       <div className="content__top--text text--2">
-       {rightDescription}
+        {leftDescription}
       </div>
       <a className="scrollto" href="#main">scroll down</a>
   </section>
