@@ -10,7 +10,7 @@ export default class PagePreview extends Component {
             {allContent.map((content, index) => (     
                <div className="content" id={RichText.asText(content.id.raw)} data-bgcolor="#111" key={index}>
                     <a className="content__back" href="#menu" aria-label="Back to menu">
-                        <svg class="icon icon--arrow">
+                        <svg className="icon icon--arrow">
                             <use xlinkHref="#icon-arrow"></use>
                         </svg>
                     </a>
@@ -35,7 +35,7 @@ export default class PagePreview extends Component {
                                 src={content.image.url}
                                 alt="Velements"
                             />
-                            <figcaption className="gallery__figure-caption">{content.image.alt}</figcaption>
+                            <figcaption className="gallery__figure-caption"></figcaption>
                         </figure>
                     </div>
                </div>

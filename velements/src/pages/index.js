@@ -15,7 +15,6 @@ export default class IndexPage extends Component {
 
   componentDidMount() {
     // Initialize custom cursor
-    console.log(document.querySelector(".cursor"))
     const cursor = new Cursor(document.querySelector(".cursor"));
 
     // Mouse effects on all links

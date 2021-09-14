@@ -10,27 +10,27 @@ export default class BackgroundImages extends Component {
 
     return (
         <div className="bg-gallery-wrap">
-            <div class="bg-gallery bg-gallery--1">
+            <div className="bg-gallery bg-gallery--1">
                 {images1.map((image, index) => (     
                     <img className="bg-gallery__item" src={image.image.url} alt={image.image.slug} key={index}/>
                 ))}
             </div>
-            <div class="bg-gallery bg-gallery--2">
+            <div className="bg-gallery bg-gallery--2">
                 {images2.map((image, index) => (     
                     <img className="bg-gallery__item" src={image.image.url} alt={image.image.slug} key={index}/>
                 ))}
             </div>
-            <div class="bg-gallery bg-gallery--3">
+            <div className="bg-gallery bg-gallery--3">
                 {images3.map((image, index) => (     
                     <img className="bg-gallery__item" src={image.image.url} alt={image.image.slug} key={index}/>
                 ))}
             </div>
-            <div class="bg-gallery bg-gallery--4">
+            <div className="bg-gallery bg-gallery--4">
                 {images4.map((image, index) => (     
                     <img className="bg-gallery__item" src={image.image.url} alt={image.image.slug} key={index}/>
                 ))}
             </div>
-            <div class="bg-gallery bg-gallery--5">
+            <div className="bg-gallery bg-gallery--5">
                 {images5.map((image, index) => (     
                     <img className="bg-gallery__item" src={image.image.url} alt={image.image.slug} key={index}/>
                 ))}

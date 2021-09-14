@@ -15,7 +15,7 @@ class MainContent extends Component {
     const pagePreview = this.props.pagePreview
 
     return (
-      <section id="main" className="js">
+      <main id="main">
       <svg className="hidden">
           <symbol id="icon-arrow" viewBox="0 0 511.996 511.996">
             <title>Arrow left</title>
@@ -36,7 +36,7 @@ class MainContent extends Component {
         <MenuContent menuTitle={menuTitle} menus={menus}/>
         <PagePreview content={pagePreview}/>
 
-      </section>
+      </main>
     )
   }
 }
