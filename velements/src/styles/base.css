@@ -488,9 +488,9 @@ main {
 .gallery {
   margin: 2rem 0 0 0;
   grid-area: gallery;
-  display: grid;
+  /* display: grid;
   grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .gallery__figure {

@@ -1,17 +1,7 @@
-import MenuController from "../helpers/menuController";
 import React, { Component } from 'react';
 import { RichText } from 'prismic-reactjs'
 
 export default class MenuContent extends Component {
-
-  componentDidMount() {
-    new MenuController(document.getElementById("menu"));
-  }
-
-  componentDidUpdate() {
-    new MenuController(document.getElementById("menu"));
-  }
-
   render() {
     const headline = this.props.menuTitle
     const menus = this.props.menus

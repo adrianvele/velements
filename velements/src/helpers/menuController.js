@@ -29,6 +29,7 @@ export default class MenuController {
     // array of all MenuItems
     this.menuItems = [];
     [...this.DOM.el.querySelectorAll(".menu__item")].forEach((item, pos) => {
+      console.log(this.DOM.content)
       this.menuItems.push(
         new MenuItem(item, this.DOM.galleries[pos], this.DOM.content[pos])
       );

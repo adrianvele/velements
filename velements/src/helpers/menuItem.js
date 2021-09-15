@@ -14,7 +14,7 @@ export default class MenuItem {
         this.DOM.cta = this.DOM.el.querySelector('.menu__item-cta');
         this.DOM.ctaInner = this.DOM.cta.querySelector('span');
         this.DOM.galleryItems = [...this.DOM.gallery.querySelectorAll('.bg-gallery__item')];
-
+    
         this.contentPage = new ContentPage(this.DOM.content);
         this.isCurrent = false;
     }

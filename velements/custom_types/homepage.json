@@ -1,228 +1,235 @@
 {
-  "Main" : {
-    "document_display_name" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1",
-        "label" : "document_display_name"
+  "Main": {
+    "document_display_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "document_display_name"
       }
     },
-    "title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading2",
-        "label" : "title"
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "title"
       }
     },
-    "left_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-        "label" : "Left Description"
+    "left_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Left Description"
       }
     },
-    "right_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-        "label" : "Right Description"
+    "right_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Right Description"
       }
     },
-    "first_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : 350
+    "first_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 350
         },
-        "thumbnails" : [ ],
-        "label" : "First Image"
+        "thumbnails": [],
+        "label": "First Image"
       }
     },
-    "second_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : 350
+    "second_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 350
         },
-        "thumbnails" : [ ],
-        "label" : "Second Image"
+        "thumbnails": [],
+        "label": "Second Image"
       }
     },
-    "menu_title" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-        "label" : "menu_title"
+    "menu_title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "menu_title"
       }
     },
-    "menus" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "heading" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "heading"
+    "menus": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "heading": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "heading"
             }
           },
-          "content" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "content"
+          "content": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "content"
             }
           },
-          "cta" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "cta"
+          "cta": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "cta"
             }
           }
         },
-        "label" : "menus"
+        "label": "menus"
       }
     },
-    "images1" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 230
+    "images1": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 230
               },
-              "thumbnails" : [ ],
-              "label" : "image"
+              "thumbnails": [],
+              "label": "image"
             }
           }
         },
-        "label" : "images1"
+        "label": "images1"
       }
     },
-    "images2" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 230
+    "images2": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 230
               },
-              "thumbnails" : [ ],
-              "label" : "image"
+              "thumbnails": [],
+              "label": "image"
             }
           }
         },
-        "label" : "images2"
+        "label": "images2"
       }
     },
-    "images3" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 230
+    "images3": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 230
               },
-              "thumbnails" : [ ],
-              "label" : "image"
+              "thumbnails": [],
+              "label": "image"
             }
           }
         },
-        "label" : "images3"
+        "label": "images3"
       }
     },
-    "images4" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 230
+    "images4": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 230
               },
-              "thumbnails" : [ ],
-              "label" : "image"
+              "thumbnails": [],
+              "label": "image"
             }
           }
         },
-        "label" : "images4"
+        "label": "images4"
       }
     },
-    "images5" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : {
-                "width" : 230
+    "images5": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 230
               },
-              "thumbnails" : [ ],
-              "label" : "image"
+              "thumbnails": [],
+              "label": "image"
             }
           }
         },
-        "label" : "images5"
+        "label": "images5"
       }
     },
-    "content" : {
-      "type" : "Group",
-      "config" : {
-        "fields" : {
-          "image" : {
-            "type" : "Image",
-            "config" : {
-              "constraint" : { },
-              "thumbnails" : [ ],
-              "label" : "image"
+    "content": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "image"
             }
           },
-          "id" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "id"
+          "id": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "id"
             }
           },
-          "title1" : {
-            "type" : "StructuredText",
-            "config" : {
-              "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
-              "label" : "title"
+          "title1": {
+            "type": "StructuredText",
+            "config": {
+              "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+              "label": "title"
             }
           },
-          "intro" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "intro"
+          "cta": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+              "label": "cta"
             }
           },
-          "text" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "text"
+          "intro": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "intro"
             }
           },
-          "subtext" : {
-            "type" : "StructuredText",
-            "config" : {
-              "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-              "label" : "subtext"
+          "text": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "text"
+            }
+          },
+          "subtext": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+              "label": "subtext"
             }
           }
         },
-        "label" : "content"
+        "label": "content"
       }
     }
   }
