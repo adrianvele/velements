@@ -1,11 +1,14 @@
 import { map, lerp, clamp, distance } from "./MathUtils";
-
-const Draggabilly = require("draggabilly");
 // Image that gets dragged gets this zIndex value which then gets incremented
 let zIndex = 1;
 
 class DraggableImage {
   constructor(el) {
+    if (typeof window == "undefined") {
+      return
+    }
+    const Draggabilly = require("draggabilly");
+    
     // Image container
     this.DOM = { el: el };
     // The draggable element
