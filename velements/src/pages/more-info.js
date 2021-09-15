@@ -3,9 +3,6 @@ import { Link } from 'gatsby'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
 
-import sunThroughTrees from '../images/sun-through-trees.jpg'
-import benchInForrest from '../images/bench-in-forrest.jpg'
-
 const MoreInfo = () => (
   <Layout>
     <Seo
