@@ -9,7 +9,12 @@ const getMousePos = e => {
     };
 };
 
+const isBrowser = typeof window !== "undefined"
+
 const calcWinsize = () => {
+  if (!isBrowser) {
+    return;
+  }
     return {width: window.innerWidth, height: window.innerHeight};
 };
 
