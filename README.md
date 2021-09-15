@@ -9,6 +9,25 @@ This project is meant to help you learn how to get started using [Prismic](https
 
 Kudos to GSAP, CURSOR and DRAGGABILITY.
 
+## Deployment
+
+Base directory : 
+```velements```
+
+Build command
+``` CI= npm run build
+```
+
+Publish directory
+   
+``` velements/public
+
+```
+
+Build Hook: 
+```Prismic URL 
+```
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development purposes.
