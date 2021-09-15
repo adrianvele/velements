@@ -4,7 +4,11 @@ import MenuItem from "./menuItem";
 
 // Calculate the viewport size
 let winsize = calcWinsize();
-window.addEventListener("resize", () => (winsize = calcWinsize()));
+const isBrowser = typeof window !== "undefined"
+if (isBrowser) {
+  window.addEventListener("resize", () => (winsize = calcWinsize()));
+}
+
 
 
 export default class MenuController {

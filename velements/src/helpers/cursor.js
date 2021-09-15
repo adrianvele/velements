@@ -3,7 +3,10 @@ import { lerp, getMousePos } from './utils';
 
 // Track the mouse position
 let mouse = {x: 0, y: 0};
-window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+const isBrowser = typeof window !== "undefined"
+if (isBrowser) {
+    window.addEventListener('mousemove', ev => mouse = getMousePos(ev));
+}
 
 export default class Cursor {
     constructor(el) {
