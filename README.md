@@ -15,17 +15,20 @@ Base directory :
 ```velements```
 
 Build command
-``` CI= npm run build
+```
+CI= npm run build
+
 ```
 
 Publish directory
    
-``` velements/public
-
+``` 
+velements/public
 ```
 
 Build Hook: 
-```Prismic URL 
+```
+Prismic URL 
 ```
 
 ## Getting Started
