@@ -1,5 +1,5 @@
 import { map, lerp, clamp, distance } from "./MathUtils";
-if (typeof window !== `undefined`) {
+if (typeof window !== 'undefined') {
   const Draggabilly = require("draggabilly");
 }
 
