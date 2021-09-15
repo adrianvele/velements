@@ -53,7 +53,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /draggabilly/,
+            test: /draggabilly-js/,
             use: loaders.null(),
           },
         ],
